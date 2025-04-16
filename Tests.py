@@ -15,7 +15,7 @@ def simulacion(n):
         #si enfermo 
         persona_enferma = random.random() < prob_enfermedad
 
-        #resultado del test
+        #resultado test
         if persona_enferma:
             resultado_positivo = random.random() < (1 - falso_negativo)
         else:
@@ -27,7 +27,6 @@ def simulacion(n):
             if persona_enferma:
                 enfermos_con_positivo += 1
 
-    # Retornamos la proporción de positivos que realmente estaban enfermos
     if total_positivos == 0:
         return 0
     else:
